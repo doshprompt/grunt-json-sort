@@ -1,0 +1,28 @@
+{
+  "name": "grunt-json-file",
+  "version": "1.0.0",
+  "description": "Alphabetizing JSON files, regardless of their type.",
+  "main": "tasks/sortJSON.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "keywords": [
+    "gruntplugin",
+    "json",
+    "sort",
+    "alphabetize",
+    "grunt",
+    "task"
+  ],
+  "author": "Rahul Doshi",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-nodeunit": "~0.2.2"
+  }
+}
