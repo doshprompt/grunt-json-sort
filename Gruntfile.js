@@ -1,10 +1,7 @@
 module.exports = function(grunt) {
     'use strict';
 
-    // default test task
     grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
-
         sortJSON: {
             noOptions: {
                 src: ['tests/results/objectFile.json']
@@ -29,6 +26,7 @@ module.exports = function(grunt) {
                 src: ['tests/results/mixedFile.json']
             }
         },
+
         copy: {
             main: {
                 expand: true,
@@ -37,21 +35,26 @@ module.exports = function(grunt) {
                 dest: 'tests/results/'
             }
         },
+
         clean: {
             src: ['tests/results/']
         },
+
         nodeunit: {
             all: ['tests/sortJSON.test.js']
         }
     });
 
-    // Actually load this plugin's task(s).
+    // Actually load this plugin's task.
     grunt.loadTasks('tasks');
 
-    grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-contrib-nodeunit');
+    // Load all required grunt tasks.
+    require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
-    // Test tasks cleans folder, runs sortJSON task, then runs nodeunit
+    /*
+     * $ grunt test
+     *
+     * task cleans folder, runs sortJSON task, then runs nodeunit
+     */
     grunt.registerTask('test', ['clean', 'copy', 'sortJSON', 'nodeunit', 'clean']);
 };
