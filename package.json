@@ -18,12 +18,20 @@
     "task"
   ],
   "author": "Rahul Doshi",
-  "license": "BSD-2-Clause",
+  "license": "MIT",
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-nodeunit": "~0.2.2",
     "matchdep": "~0.3.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/doshprompt/grunt-json-sort.git"
+  },
+  "bugs": {
+    "url": "https://github.com/doshprompt/grunt-json-sort/issues"
+  },
+  "homepage": "https://github.com/doshprompt/grunt-json-sort"
 }
