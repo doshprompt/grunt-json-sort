@@ -1,5 +1,5 @@
 {
-  "name": "grunt-json-file",
+  "name": "grunt-json-sort",
   "version": "1.0.0",
   "description": "Alphabetizing JSON files, regardless of their type.",
   "main": "tasks/sortJSON.js",
