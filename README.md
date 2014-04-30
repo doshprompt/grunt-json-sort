@@ -118,8 +118,11 @@ All you need to do is specify the files to alphabetize as the source files. Here
 		> npm test
 
 ## Contributing
+
 In lieu of a formal style guide, take care to maintain the existing coding style.
 Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+Please refer to this [document][commit-message-format] for a detailed explanation of git commit guidelines - source: [AngularJS](https://angualrjs.org)
+[commit-message-format]: https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#
 
 ## Release History
 
@@ -127,4 +130,5 @@ Add unit tests for any new or changed functionality. Lint and test your code usi
 
 ---
 
-Task submitted by Rahul Doshi
+Task submitted by Rahul Doshi.
+Forked from [grunt-sort-json](https://www.npmjs.org/package/grunt-sort-json) by [Andrew Mead](http://www.andrewjmead.com)
