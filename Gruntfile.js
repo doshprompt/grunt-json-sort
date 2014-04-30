@@ -22,8 +22,11 @@ module.exports = function(grunt) {
                     jshintrc: 'tests/.jshintrc'
                 }
             },
-            sortArr: {
+            sortedArr: {
                 src: ['tests/results/arrayFile.json']
+            },
+            sortMix: {
+                src: ['tests/results/mixedFile.json']
             }
         },
         copy: {

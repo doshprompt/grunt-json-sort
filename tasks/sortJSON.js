@@ -18,14 +18,18 @@ module.exports = function (grunt) {
             i,
             prop;
 
-        for (i = 0; i < orderedProperties.length; i++) {
-            prop = orderedProperties[i];
+        if (typeof obj.length === 'number') {
+            sortedObject = obj.sort();
+        } else {
+            for (i = 0; i < orderedProperties.length; i++) {
+                prop = orderedProperties[i];
 
-            sortedObject[prop] = obj[prop];
+                sortedObject[prop] = obj[prop];
 
-            // if it's an object, sort it!
-            if (typeof obj[prop] === 'object') {
-                sortedObject[prop] = recursiveSort(obj[prop]);
+                // if it's an object, sort it!
+                if (typeof obj[prop] === 'object') {
+                    sortedObject[prop] = recursiveSort(obj[prop]);
+                }
             }
         }
 
@@ -42,7 +46,7 @@ module.exports = function (grunt) {
     function sortFile (file, spacing) {
         var jsonObject = grunt.file.readJSON(file),
             // if it's an array, use native method, else fallback to ours.
-            sortedObject = jsonObject.length ? jsonObject.sort() : recursiveSort(jsonObject);
+            sortedObject = recursiveSort(jsonObject);
 
         grunt.file.write(file, JSON.stringify(sortedObject, null, spacing));
         grunt.log.writeln('File sorted: ' + file.cyan);

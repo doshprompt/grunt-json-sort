@@ -23,6 +23,15 @@ module.exports = {
     
         test.done();
     },
+    sortJSONMixed: function (test) {
+        test.expect(1);
+    
+        var expect = grunt.file.read('tests/expect/mixedFile.json'),
+            result = grunt.file.read('tests/results/mixedFile.json');
+            test.equal(expect, result, 'should process a basic sortJSON task');
+    
+        test.done();
+    },
     customJSONSpacing: function (test) {
         test.expect(1);
     
