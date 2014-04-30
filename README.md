@@ -4,7 +4,7 @@
 
 ## Community
 
-If you have any problems setting up or using `grunt-json-sortn`, open an issue. I would be happy to help.
+If you have any problems setting up or using `grunt-json-sort`, open an issue. I would be happy to help.
 
 **This is an active repository** that takes user suggestions, feedback and pull requests seriously. Happy grunting!
 
