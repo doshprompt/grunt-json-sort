@@ -115,7 +115,7 @@ All you need to do is specify the files to alphabetize as the source files. Here
 ## Run Tests
 
 		> npm install
-		> npm test
+		> grunt test
 
 ## Contributing
 
