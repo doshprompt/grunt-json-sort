@@ -1,8 +1,8 @@
+#
 grunt-json-sort [![Build Status](https://travis-ci.org/doshprompt/grunt-json-sort.svg?branch=master)](https://travis-ci.org/doshprompt/grunt-json-sort)
 [![NPM version](https://badge.fury.io/js/grunt-json-sort.svg)](http://badge.fury.io/js/grunt-json-sort)
-===============
 
-> A grunt task for alphabetizing JSON files, irrespective of their type(s).
+*A grunt task for alphabetizing JSON files, irrespective of their type(s).*
 
 ## Community
 
