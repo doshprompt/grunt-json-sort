@@ -1,4 +1,5 @@
 grunt-json-sort [![Build Status](https://travis-ci.org/doshprompt/grunt-json-sort.svg?branch=master)](https://travis-ci.org/doshprompt/grunt-json-sort)
+[![NPM version](https://badge.fury.io/js/grunt-json-sort.svg)](http://badge.fury.io/js/grunt-json-sort)
 ===============
 
 > A grunt task for alphabetizing JSON files, irrespective of their type(s).
@@ -116,7 +117,7 @@ All you need to do is specify the files to alphabetize as the source files. Here
 ## Run Tests
 
 		> npm install
-		> grunt test
+		> npm test
 
 ## Contributing
 
